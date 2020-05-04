@@ -15,7 +15,7 @@ module InstantApp
       g.skip_routes true
       g.helper false
       g.assets false
-      g.test_framewaork :rspec
+      g.test_framework false
       g.controller_specs false
       g.view_specs false
     end

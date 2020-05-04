@@ -18,9 +18,20 @@ Rails.application.configure do
   end
 
   config.active_storage.service = :local
+
   config.action_mailer.raise_delivery_errors = false
   config.action_mailer.perform_caching = false
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :address => 'smtp.gmail.com',
+    :port => 587,
+    :user_name => 'rk.fromj@gmail.com',
+    :password => 'eoqdfrusbbzwwepx',
+    :authentication => :plain,
+    :enable_starttles_auto => true
+  }
+
   config.active_support.deprecation = :log
   config.active_record.migration_error = :page_load
   config.active_record.verbose_query_logs = true
