@@ -1,0 +1,11 @@
+<div class="user-form">
+  <h1>Post</h1>
+  <%= form_for(@post) do |f| %>
+    <%= render 'shared/error_messages', object: f.object %>
+    <%= f.text_area :caption %>
+    <%= f.submit "Post", class: "btn btn-primary" %>
+    <span class="picture">
+      <%= f.file_field :picture %>
+    </span>
+  <% end %>
+</div>

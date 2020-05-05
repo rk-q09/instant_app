@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   }
   root 'pages#home'
   resources :users
+  resources :posts, only: [:new, :show, :create, :destroy]
 end

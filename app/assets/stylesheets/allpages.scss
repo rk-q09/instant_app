@@ -40,6 +40,21 @@ ol {
   list-style-type: none;
 }
 
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has-error;
+  .form-control {
+    color: $state-danger-text;
+  }
+}
+
 /* form */
 
 .user-form {
@@ -66,13 +81,13 @@ ol {
   }
 }
 
-/* micropost */
-.micropost-view {
+/* post */
+.post-view {
   margin-top: 25px;
   width: 100%;
 }
 
-.micropost-main {
+.post-main {
   width: 25%;
   float: left;
 

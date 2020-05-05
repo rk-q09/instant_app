@@ -8,3 +8,11 @@
     <%= @user.self_introduction %>
   </section>
 </div>
+
+<div class="row">
+    <% if @user.posts.any? %>
+      <ol class="posts">
+       <%= render @posts %>
+      </ol>
+    <% end %>
+</div>

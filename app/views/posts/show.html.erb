@@ -1,0 +1,10 @@
+<div class="post-view">
+  <div class="post-main">
+    <%= image_tag @post.picture.url %>
+    <p><%= @post.caption %></p>
+    <% if current_user?(@post.user) %>
+      <%= link_to "投稿を削除する", @post, method: :delete,
+                     data: { confirm: "この投稿を削除します。よろしいですか？" } %>
+    <% end %>
+  </div>
+</div>

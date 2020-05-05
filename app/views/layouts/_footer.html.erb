@@ -1,3 +1,7 @@
 <footer>
-  <h1>InstantApp</h1>
+  <% if user_signed_in? %>
+   <%= link_to 'Post', new_post_url %>
+  <% else %>
+   <h1>InstantApp</h1>
+  <% end %>
 </footer>
