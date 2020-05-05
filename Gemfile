@@ -41,8 +41,6 @@ end
 
 group :production do
   gem 'fog', '1.42'
-  gem 'devise'
-  gem 'devise-i18n'
 end
 
 
