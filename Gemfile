@@ -16,6 +16,7 @@ gem 'devise'
 gem 'devise-i18n'
 gem 'omniauth'
 gem 'omniauth-facebook'
+gem 'bootstrap-sass', '3.3.7'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

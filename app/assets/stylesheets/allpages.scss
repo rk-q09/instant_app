@@ -1,0 +1,125 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "shared/colors";
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: $very_light_gray;
+}
+
+.wrapper{
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 80px;
+  box-sizing: border-box; /* footer分のpaddingをmin-heightに含める */
+}
+
+.col-md-4 {
+  margin-bottom: 30px;
+}
+
+header {
+  width: 100%;
+  background-color: white;
+  padding: 20px 0;
+  top: 0;
+}
+
+footer {
+  width: 100%;
+  background-color: white;
+  padding: 20px 0;
+  position: flex;
+  text-align: center;
+  bottom: 0;
+}
+
+ol {
+  list-style-type: none;
+}
+
+/* form */
+
+.user-form {
+  margin: 35px auto;
+  padding: 25px;
+  width: 750px;
+  border: 1px solid $light_gray;
+
+  h1 {
+    text-align: center;
+  }
+
+  input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+  }
+
+  textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 5px;
+    resize: vertical;
+  }
+}
+
+/* micropost */
+.micropost-view {
+  margin-top: 25px;
+  width: 100%;
+}
+
+.micropost-main {
+  width: 25%;
+  float: left;
+
+  & textarea {
+    width: 100%;
+  }
+}
+.comments {
+  width: 70%;
+  float: right;
+}
+
+/* likes */
+
+.like {
+  & input {
+    margin-top: 10px;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}
+
+/* comments */
+.comment-form {
+  & input {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}
+.comments {
+  padding: 10px;
+  border: 1px solid $light_gray;
+
+  & h4 {
+    margin-top: 0;
+  }
+  & a {
+    margin-left: 5px;
+  }
+}
+
+/* notifications */
+
+.notification-form {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.notification-line {
+  margin-bottom: 5px;
+}

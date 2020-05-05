@@ -25,6 +25,11 @@ ja:
         unconfirmed_email: 未確認Eメール
         unlock_token: ロック解除用トークン
         updated_at: 更新日
+        name: アカウント名
+        user_name: ユーザーネーム
+        websice: webサイト
+        self_introduction: 自己紹介
+        sex: 性別
     models:
       user: ユーザ
   devise:
