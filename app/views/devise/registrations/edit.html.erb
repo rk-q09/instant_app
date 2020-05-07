@@ -32,9 +32,6 @@
       <%= f.label :password_confirmation %><br />
       <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
 
-      <%= f.label :current_password %> <i>(<%= t('.we_need_your_current_password_to_confirm_your_changes') %>)</i><br />
-      <%= f.password_field :current_password, autocomplete: "current-password" %>
-
       <%= f.submit t('.update'), class: "btn btn-primary" %>
     <% end %>
 

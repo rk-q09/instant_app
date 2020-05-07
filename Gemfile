@@ -15,7 +15,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'devise'
 gem 'devise-i18n'
 gem 'omniauth'
-gem 'omniauth-facebook'
+gem 'omniauth-google-oauth2'
 gem 'bootstrap-sass', '3.3.7'
 gem 'carrierwave'
 gem 'mini_magick'
