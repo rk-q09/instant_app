@@ -20,6 +20,7 @@ gem 'bootstrap-sass', '3.3.7'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'rails-i18n', '~> 6.0.0'
+gem 'ransack'
 
 
 group :development, :test do

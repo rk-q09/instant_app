@@ -4,8 +4,8 @@
       <%= gravatar_for @user %>
       <%= @user.user_name %>
     </h1>
-    <%= @user.website %>
-    <%= @user.self_introduction %>
+    <p><%= @user.self_introduction %></p>
+    <p>website: <%= @user.website %></p>
   </section>
   <section class="stats">
     <%= render 'shared/stats' %>

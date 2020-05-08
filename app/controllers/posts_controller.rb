@@ -1,6 +1,11 @@
 class PostsController < ApplicationController
-  before_action :user_signed_in?, only: [:new, :create, :destroy,]
+  before_action :authenticate_user!, only: [:new, :create, :destroy]
   before_action :correct_user, only: :destroy
+
+  def index
+    @q = Post.ransack(params[:q])
+    @search_results = @q.result(distinct: true)
+  end
 
   def new
     @post = current_user.posts.build

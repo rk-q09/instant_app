@@ -1,7 +1,8 @@
 <div class="post-view">
   <div class="post-main">
     <%= image_tag @post.picture.url %>
-    <p><%= @post.caption %></p>
+    <h5>写真の説明:</h5>
+    <%= @post.caption %>
     <%= render 'iine_form', post: @post  %>
     <%= render 'comment_form', post: @post %>
     <% if current_user?(@post.user) %>

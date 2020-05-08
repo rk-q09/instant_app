@@ -3,6 +3,7 @@
     <ul class="nav">
       <% if user_signed_in? %>
         <li><%= link_to 'トップページ', authenticated_root_path %></li>
+        <%= render 'layouts/search_form' %>
         <li><%= link_to 'マイページ', current_user %></li>
         <% if unchecked_notifications.any? %>
           <li><%= link_to '通知(未確認)', notifications_path %></li>
