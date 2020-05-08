@@ -19,6 +19,7 @@ gem 'omniauth-google-oauth2'
 gem 'bootstrap-sass', '3.3.7'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'rails-i18n', '~> 6.0.0'
 
 
 group :development, :test do
