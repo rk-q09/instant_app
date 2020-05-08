@@ -9,6 +9,7 @@ class User < ApplicationRecord
   has_many :following, through: :active_relationships, source: :followed
   has_many :followers, through: :passive_relationships, source: :follower
   has_many :likes, dependent: :destroy
+  has_many :comments
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable,
          :confirmable, :omniauthable, omniauth_providers: %i(google)
@@ -25,6 +26,11 @@ class User < ApplicationRecord
 
   def following?(other_user)
     following.include?(other_user)
+  end
+
+  #コメントを削除する
+  def delete_comment(post)
+    comments.find_by(post_id: post.id).destroy
   end
 
   def feed

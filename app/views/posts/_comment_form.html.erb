@@ -1,0 +1,6 @@
+<div class="comment-form">
+  <%= form_with(model: [@post, @comment], local: true) do |f| %>
+    <%= f.text_area :content %>
+    <%= f.submit "送信", class: "btn btn-primary" %>
+  <% end %>
+</div>
