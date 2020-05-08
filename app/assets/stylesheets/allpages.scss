@@ -40,6 +40,15 @@ ol {
   list-style-type: none;
 }
 
+nav {
+  & .nav {
+    & li {
+      list-style-type: none;
+      display: inline-block;
+    }
+  }
+}
+
 #error_explanation {
   color: red;
   ul {
