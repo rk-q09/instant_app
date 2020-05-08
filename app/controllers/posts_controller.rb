@@ -8,6 +8,8 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
+    @comments = @post.comments
+    @comment = @post.comments.build
   end
 
   def create
@@ -23,7 +25,7 @@ class PostsController < ApplicationController
   def destroy
     @post.destroy
     flash[:success] = "投稿が削除されました。"
-    redirect_to root_path
+    redirect_to current_user
   end
 
   private

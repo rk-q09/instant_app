@@ -3,9 +3,22 @@
     <%= image_tag @post.picture.url %>
     <p><%= @post.caption %></p>
     <%= render 'iine_form', post: @post  %>
+    <%= render 'comment_form', post: @post %>
     <% if current_user?(@post.user) %>
       <%= link_to "投稿を削除する", @post, method: :delete,
                      data: { confirm: "この投稿を削除します。よろしいですか？" } %>
+    <% end %>
+  </div>
+
+  <div class="comments">
+    <h4>コメント一覧</h4>
+    <% @comments.each do |comment| %>
+      <div class="comment-list">
+        <%= comment.content %>
+        <% if comment.user_id == current_user.id %>
+          <%= link_to "削除する" , [@post,comment], method: :delete if current_user?(comment.user) %>
+        <% end %>
+      </div>
     <% end %>
   </div>
 </div>
