@@ -1,0 +1,5 @@
+<% if @search_results.any? %>
+   <% @search_results.each do |result| %>
+     <p><%= link_to result.caption, post_path(result) %></p>
+   <% end %>
+<% end %>

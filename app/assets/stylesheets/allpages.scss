@@ -40,6 +40,18 @@ ol {
   list-style-type: none;
 }
 
+nav {
+  & .nav {
+    & li {
+      list-style-type: none;
+      display: inline-block;
+    }
+  }
+  & form {
+    display: inline-block;
+  }
+}
+
 #error_explanation {
   color: red;
   ul {
@@ -79,6 +91,17 @@ ol {
     padding: 5px;
     resize: vertical;
   }
+}
+
+/* user */
+.user-info {
+  & p {
+    margin: 3px 0;
+  }
+}
+
+.stats {
+  margin: 3px 0;
 }
 
 /* post */
