@@ -1,24 +1,16 @@
-# README
+○自分が苦労した点
+・実装を始めるに当たって手の付け方が分からなかったので、RailsTutorialに沿って進めていき、残すところはfacebookログイン認証のところまでいったが、Deviseを使わずに実装することができなかったので、０からやり直した。
+・HTML, CSSの知識・実装力が足りておらず、rails関連の学習と重なって、開発途中でストレスになった。レイアウトがきちんと決まればもっとスムーズに開発を進められたと思う。
+・原因不明のエラーがでたとき、解決するためにそもそもRailsの内部動作を理解していないと難しく、google検索で得た場当たり的な対処方法になった。（メタプログラミングRubyを読んで、Railsのコードが読めるようにしたい。）
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+○学んだ点
+・RailsTutorialの理解度が高くなかったが、このサブ課題を通して少しはRailsの全体像を知ることができた。
 
-Things you may want to cover:
+○自慢したい・相談したい点
+・シンプルで無駄のないコードを書くように意識しました。
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+以下の機能用件を満たせていません。
+・facebookのアカウントが停止されてしまった為、googleログイン認証に代替した。
+・写真をモーダルで表示させる機能。
+・ユーザーのパスワード変更時に現在のパスワードを求める。
+・テストを書けていない。（本課題までに参考図書などでrspecを学びます。）
